@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio | BCA Student</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#home" id="logo">
+            MyPortfolio
+        </a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto" id="navLinks">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ERROR MESSAGE -->
+<div id="errorMessage" class="container text-center mt-5 pt-5 d-none">
+    <div class="alert alert-danger">
+        Unable to load portfolio information. Please check data.json and try again.
+    </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<main id="portfolioContent" class="d-none">
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-7">
+                    <p class="hero-subtitle" id="heroGreeting"></p>
+
+                    <h1>
+                        I'm <span id="studentName"></span>
+                    </h1>
+
+                    <h3 id="studentTitle"></h3>
+
+                    <p id="heroIntro" class="hero-description"></p>
+
+                    <p class="career-goal" id="careerGoal"></p>
+
+                    <div class="mt-4">
+                        <a href="#contact" class="btn btn-primary-custom">
+                            Contact Me
+                        </a>
+
+                        <a href="#" id="resumeLink"
+                           class="btn btn-outline-custom" download>
+                            <i class="bi bi-download"></i> Download Resume
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 text-center mt-5 mt-lg-0">
+                    <div class="profile-wrapper">
+                        <img id="profileImage" src="" alt="Student Profile"
+                             class="profile-img">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="section-heading">
+                <span>WHO I AM</span>
+                <h2>About Me</h2>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="about-card">
+                        <p id="aboutDescription"></p>
+
+                        <div class="row mt-4">
+                            <div class="col-md-6 mb-3">
+                                <i class="bi bi-envelope-fill"></i>
+                                <strong>Email:</strong>
+                                <span id="aboutEmail"></span>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <i class="bi bi-telephone-fill"></i>
+                                <strong>Phone:</strong>
+                                <span id="aboutPhone"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section-padding bg-light-custom">
+        <div class="container">
+
+            <div class="section-heading">
+                <span>MY EXPERTISE</span>
+                <h2>Technical Skills</h2>
+            </div>
+
+            <div class="row g-4" id="skillsContainer"></div>
+
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+
+            <div class="section-heading">
+                <span>MY WORK</span>
+                <h2>Recent Projects</h2>
+            </div>
+
+            <div class="row g-4" id="projectsContainer"></div>
+
+        </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="section-padding bg-light-custom">
+        <div class="container">
+
+            <div class="section-heading">
+                <span>MY JOURNEY</span>
+                <h2>Education</h2>
+            </div>
+
+            <div id="educationContainer"></div>
+
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section id="certifications" class="section-padding">
+        <div class="container">
+
+            <div class="section-heading">
+                <span>ACHIEVEMENTS</span>
+                <h2>Certifications & Achievements</h2>
+            </div>
+
+            <div class="row g-4" id="certificationsContainer"></div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section-padding bg-light-custom">
+        <div class="container">
+
+            <div class="section-heading">
+                <span>GET IN TOUCH</span>
+                <h2>Contact Me</h2>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+
+                    <div class="contact-card">
+
+                        <form id="contactForm" novalidate>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="contactName">Your Name</label>
+                                    <input type="text" id="contactName"
+                                           class="form-control"
+                                           placeholder="Enter your name"
+                                           required>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <label for="contactEmail">Your Email</label>
+                                    <input type="email" id="contactEmail"
+                                           class="form-control"
+                                           placeholder="Enter your email"
+                                           required>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="contactSubject">Subject</label>
+                                <input type="text" id="contactSubject"
+                                       class="form-control"
+                                       placeholder="Enter subject"
+                                       required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="contactMessage">Message</label>
+                                <textarea id="contactMessage"
+                                          class="form-control"
+                                          rows="5"
+                                          placeholder="Write your message"
+                                          required></textarea>
+                            </div>
+
+                            <button type="submit"
+                                    class="btn btn-primary-custom">
+                                Send Message <i class="bi bi-send"></i>
+                            </button>
+
+                            <div id="formMessage" class="mt-3"></div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container text-center">
+
+        <h4 id="footerName">My Portfolio</h4>
+
+        <p>Building my future with creativity and technology.</p>
+
+        <div class="social-links" id="socialLinks"></div>
+
+        <hr>
+
+        <p class="mb-0">
+            &copy; <span id="currentYear"></span>
+            <span id="copyrightName"></span>.
+            All Rights Reserved.
+        </p>
+
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>

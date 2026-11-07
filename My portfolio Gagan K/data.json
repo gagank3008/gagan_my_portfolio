@@ -1,0 +1,168 @@
+
+{
+    "personal": {
+        "name": "Gagan Koparde",
+        "greeting": "HELLO, WELCOME TO MY PORTFOLIO",
+        "title": "BCA Student | Web Developer",
+        "profileImage": "https://m.media-amazon.com/images/M/MV5BMmQ5ZjJkZDgtOTg1Ny00YzY2LWEyMzEtNWE4NzEwOGE4ZjAwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        "introduction": "I am a passionate Bachelor of Computer Applications student who loves programming, designing websites and exploring new technologies.",
+        "careerGoal": "My Goal: To become a skilled Full Stack Developer.",
+        "email": "gagan@example.com",
+        "phone": "+91 9998855334",
+        "resume": "resume.pdf"
+    },
+
+    "about": {
+        "description": "Hello! My name is Gagan Koparde. I am currently pursuing Bachelor of Computer Applications (BCA) in my first year. I have a strong interest in web development, programming and software technologies. I enjoy learning new programming languages and creating innovative projects. My objective is to develop my technical knowledge, improve my problem-solving abilities and build a successful career in the IT industry."
+    },
+
+    "skills": [
+        {
+            "name": "HTML5",
+            "icon": "bi bi-filetype-html",
+            "description": "Creating structured web pages.",
+            "level": 85
+        },
+        {
+            "name": "CSS3",
+            "icon": "bi bi-filetype-css",
+            "description": "Designing beautiful responsive websites.",
+            "level": 80
+        },
+        {
+            "name": "JavaScript",
+            "icon": "bi bi-filetype-js",
+            "description": "Adding interactive website functionality.",
+            "level": 65
+        },
+        {
+            "name": "Bootstrap 5",
+            "icon": "bi bi-bootstrap-fill",
+            "description": "Building responsive web layouts.",
+            "level": 75
+        },
+        {
+            "name": "C Programming",
+            "icon": "bi bi-code-square",
+            "description": "Learning programming fundamentals.",
+            "level": 70
+        },
+        {
+            "name": "C++",
+            "icon": "bi bi-filetype-cpp",
+            "description": "Understanding object-oriented programming.",
+            "level": 60
+        }
+    ],
+
+    "projects": [
+        {
+            "name": "Personal Portfolio Website",
+            "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800",
+            "description": "A modern personal portfolio website to showcase my introduction, skills, projects and educational details.",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "Bootstrap",
+                "JavaScript"
+            ],
+            "link": "https://github.com/"
+        },
+        {
+            "name": "Student Management System",
+            "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800",
+            "description": "A basic student management application concept for managing student records and academic information.",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "link": "https://github.com/"
+        },
+        {
+            "name": "Calculator Application",
+            "image": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800",
+            "description": "A simple and attractive calculator that performs basic mathematical operations.",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "link": "https://github.com/"
+        },
+        {
+            "name": "College Landing Page",
+            "image": "https://images.unsplash.com/photo-1562774053-701939374585?w=800",
+            "description": "A responsive college website landing page with information about courses, facilities and admissions.",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "Bootstrap 5"
+            ],
+            "link": "https://github.com/"
+        }
+    ],
+
+    "education": [
+        {
+            "course": "Bachelor of Computer Applications (BCA)",
+            "college": "PC Jabin College of Computer Science",
+            "duration": "2026 - 2029",
+            "semester": "1st Semester",
+            "details": "Currently learning computer fundamentals, programming in C, mathematics and web development.",
+            "status": "Currently Pursuing"
+        },
+        {
+            "course": "Higher Secondary Education (12th)",
+            "college": "Base PU College",
+            "duration": "2024 - 2026",
+            "semester": "Completed",
+            "details": "Completed higher secondary education.",
+            "status": "Completed"
+        }
+    ],
+
+    "certifications": [
+        {
+            "name": "HTML and CSS Fundamentals",
+            "provider": "Online Learning Platform",
+            "year": "2026",
+            "description": "Introduction to HTML elements, CSS styling and web page development."
+        },
+        {
+            "name": "Introduction to C Programming",
+            "provider": "Online Learning Platform",
+            "year": "2026",
+            "description": "Learned variables, loops, functions and basic programming concepts."
+        },
+        {
+            "name": "JavaScript for Beginners",
+            "provider": "Online Learning Platform",
+            "year": "2026",
+            "description": "Learned JavaScript basics, functions, events and DOM manipulation."
+        }
+    ],
+
+    "social": [
+        {
+            "name": "GitHub",
+            "icon": "bi bi-github",
+            "url": "https://github.com/"
+        },
+        {
+            "name": "LinkedIn",
+            "icon": "bi bi-linkedin",
+            "url": "https://www.linkedin.com/"
+        },
+        {
+            "name": "Instagram",
+            "icon": "bi bi-instagram",
+            "url": "https://www.instagram.com/"
+        },
+        {
+            "name": "Facebook",
+            "icon": "bi bi-facebook",
+            "url": "https://www.facebook.com/"
+        }
+    ]
+}
